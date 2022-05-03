@@ -12,8 +12,9 @@ steps:
   - name: docker
     image: plugins/docker
     settings:
-      repo: test/img
-      registry: pvlk.ru:5000
+      repo: shoom1337/test
+      username: shoom1337
+      password: e3967e22-b813-41eb-b7e9-6cd017cf1bf4
   - name: send telegram notification
     image: appleboy/drone-telegram
     settings:
