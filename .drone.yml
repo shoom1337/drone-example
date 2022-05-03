@@ -4,6 +4,7 @@ name: node
 
 steps:
   - name: run
+    pull: if-not-exists
     image: node:16
     commands:
       - npm install
