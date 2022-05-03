@@ -1,20 +1,10 @@
 kind: pipeline
 type: docker
-name: en
+name: node
 
 steps:
   - name: greeting
-    image: alpine
+    image: node
     commands:
-      - echo hello world
-
----
-kind: pipeline
-type: docker
-name: fr
-
-steps:
-  - name: greeting
-    image: alpine
-    commands:
-      - echo bonjour monde
+      - npm install
+      - node src/app.js
