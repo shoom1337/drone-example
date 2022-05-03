@@ -9,4 +9,3 @@ steps:
     commands:
       - echo hello
       - npm install
-      - node src/app.js
