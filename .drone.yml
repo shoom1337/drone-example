@@ -12,7 +12,8 @@ steps:
   - name: send telegram notification
     image: appleboy/drone-telegram
     settings:
-      token: 5136625822:AAH936M8ExeTkahhZaxBS_LGzEfkmH8K1XI
+      token:
+        from_secret: tguser
       to: 548278998
       message: >
         {{#success build.status}}
