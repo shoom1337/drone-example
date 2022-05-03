@@ -9,6 +9,11 @@ steps:
     commands:
       - echo hello
       - npm install
+  - name: docker
+    image: plugins/docker
+    settings:
+      repo: test/img
+      registry: pvlk.ru:5000
   - name: send telegram notification
     image: appleboy/drone-telegram
     settings:
