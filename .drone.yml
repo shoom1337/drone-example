@@ -3,12 +3,12 @@ type: docker
 name: node
 
 steps:
-  - name: run
-    pull: if-not-exists
-    image: node:16
-    commands:
-      - echo hello
-      - npm install
+  # - name: run
+  #   pull: if-not-exists
+  #   image: node:16
+  #   commands:
+  #     - echo hello
+  #     - npm install
   - name: docker
     image: plugins/docker
     settings:
