@@ -3,8 +3,8 @@ type: docker
 name: node
 
 steps:
-  - name: greeting
-    image: node
+  - name: run
+    image: node:16
     commands:
       - npm install
       - node src/app.js
